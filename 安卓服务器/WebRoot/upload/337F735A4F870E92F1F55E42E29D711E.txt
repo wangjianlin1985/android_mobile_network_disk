@@ -1,0 +1,9 @@
+﻿XTF FtnInfo
+FileCookieID: 1
+FileName: afasffasf.rar
+FileSize: 16225138
+FtnUrl: /ftn_handler/b5fa63fd4e266a028920996ad826054a9d10fc1182a272c6242eff9994f05184ef478d0ad9a9c660cb1366f49206cbd5b46ea9a34c71baddefe041d64c99dd21
+FtnCookie:FTN5K=3e9d9770
+FtnIP: 111.10.32.148
+FtnPort:80
+

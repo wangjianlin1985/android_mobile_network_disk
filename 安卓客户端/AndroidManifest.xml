@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobileclient.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+         android:targetSdkVersion="8"
+         /> 
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:name="com.mobileclient.app.Declare">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="MainActivity"></activity>
+        <activity android:name="MainUserActivity"></activity>
+        <activity android:name="MoreActivity"></activity>
+        <activity android:name="AboutActivity"></activity>
+        <activity android:name="RegisterActivity"></activity>
+        <activity android:name="MainMenuActivity"></activity>
+        <activity android:name="UserInfoListActivity"></activity>
+        <activity android:name="UserInfoQueryActivity"></activity>
+        <activity android:name="UserInfoAddActivity"></activity>
+        <activity android:name="UserInfoEditActivity"></activity>
+        <activity android:name="UserInfoDetailActivity"></activity>
+        <activity android:name="FileClassListActivity"></activity>
+        <activity android:name="FileClassQueryActivity"></activity>
+        <activity android:name="FileClassAddActivity"></activity>
+        <activity android:name="FileClassEditActivity"></activity>
+        <activity android:name="FileClassDetailActivity"></activity>
+        <activity android:name="FileInfoListActivity"></activity>
+        <activity android:name="FileInfoUserListActivity"></activity>
+        <activity android:name="FileInfoQueryActivity"></activity>
+        <activity android:name="FileInfoUserQueryActivity"></activity>
+        <activity android:name="FileInfoAddActivity"></activity>
+        <activity android:name="FileInfoUserAddActivity"></activity>
+        <activity android:name="FileInfoEditActivity"></activity>
+        <activity android:name="FileInfoDetailActivity"></activity>
+        <activity android:name="YesOrNoListActivity"></activity>
+        <activity android:name="YesOrNoQueryActivity"></activity>
+        <activity android:name="YesOrNoAddActivity"></activity>
+        <activity android:name="YesOrNoEditActivity"></activity>
+        <activity android:name="YesOrNoDetailActivity"></activity>
+        <activity android:name="NoticeListActivity"></activity>
+        <activity android:name="NoticeQueryActivity"></activity>
+        <activity android:name="NoticeAddActivity"></activity>
+        <activity android:name="NoticeEditActivity"></activity>
+        <activity android:name="NoticeDetailActivity"></activity>
+
+        <activity android:name="photoListActivity"></activity>
+        <activity android:name="fileListActivity"></activity>
+    </application>
+
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+
+	<!-- 文件读写权限 -->
+	
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"></uses-permission>
+	
+	
+</manifest>

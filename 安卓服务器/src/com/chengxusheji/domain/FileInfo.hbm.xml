@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.chengxusheji.domain">
+
+	<class name="FileInfo" table="FileInfo">
+
+          <!-- 主键文档id -->
+          <id name="fileId" column="fileId">
+            <generator class="native"/>
+          </id>
+
+          <!-- 多对一属性: 文档分类 -->
+          <many-to-one name="fileClassObj"
+            column="fileClassObj"
+            class="FileClass"
+            lazy="false"
+            outer-join="true"
+            cascade="save-update"
+          />
+
+          <!-- 简单字符串属性: 文档名称 -->
+          <property
+            name="fileName"
+            column="fileName"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单图片属性: 文档图片 -->
+          <property
+            name="filePhoto"
+            column="filePhoto"
+            type="string"
+            length="50"
+          />
+
+          <!-- 简单字符串属性: 文档描述 -->
+          <property
+            name="fileDesc"
+            column="fileDesc"
+            type="string"
+            length="800"
+          />
+
+          <!-- 多对一属性: 是否公开 -->
+          <many-to-one name="privateFlag"
+            column="privateFlag"
+            class="YesOrNo"
+            lazy="false"
+            outer-join="true"
+            cascade="save-update"
+          />
+
+          <!-- 简单图片属性: 文档文件 -->
+          <property
+            name="docFile"
+            column="docFile"
+            type="string"
+            length="50"
+          />
+
+          <!-- 多对一属性: 上传用户 -->
+          <many-to-one name="userObj"
+            column="userObj"
+            class="UserInfo"
+            lazy="false"
+            outer-join="true"
+            cascade="save-update"
+          />
+
+          <!-- 简单字符串属性: 上传时间 -->
+          <property
+            name="upTime"
+            column="upTime"
+            type="string"
+            length="20"
+          />
+
+
+		 
+		
+	</class>
+	
+</hibernate-mapping>
+ 
